@@ -33,4 +33,9 @@
 % początek dokumentu
 \begin{document}
 \maketitle
+\section{Czas uniksowy i problem roku 2038}
+Czas uniksowy liczy sekundy od północy 1 stycznia 1970 roku w strefie UTC.
+Niektóre programy zapisują tę liczbę w 32 bitach ze znakiem.
+19 stycznia 2038 roku liczba sekund przekroczy zakres tego zapisu, więc program
+może odczytać błędną datę. Rozwiązaniem jest zapis czasu w 64 bitach.
 \end{document}
